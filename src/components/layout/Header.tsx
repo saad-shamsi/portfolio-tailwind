@@ -5,6 +5,7 @@ import {CgWebsite} from "react-icons/cg"
 import {RiContactsFill} from "react-icons/ri"
 import {FaInfoCircle} from "react-icons/fa"
 import Link from 'next/link'
+import {useState} from "react"
 const Header = () => {
   return (
     <div className='w-full  flex justify-center '>

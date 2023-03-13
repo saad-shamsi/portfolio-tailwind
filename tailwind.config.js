@@ -1,3 +1,6 @@
+// const colors = require('tailwindcss/colors')
+
+import ('tailwindcss/colors')
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -11,7 +14,11 @@ module.exports = {
   theme: {
     extend: {
       colors :{
-         glass:'#ffffff09'
+         glass:'#ffffff09',
+        //  'cyan': colors.cyan,
+        // 'teal':colors.teal
+
+
       }
     },
   },

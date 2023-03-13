@@ -27,7 +27,7 @@ const About = () => {
        <div className=' bg-teal-200 pb-24 flex flex-col items-center justify-center pt-8'>
         <div className='flex gap-5 flex-col  flex-center items-center'>
           <h1 className='font-bold text-6xl  '>About Me</h1>
-          <p className='text-left text-xl font-2xl max-w-md'>I am a tech-savvy individual with a Bachelor's degree in Software Development, seeking employment as a mobile game developer. I am passionate about consistently advancing my knowledge and skills. I have attended multiple seminars and boot camps on coding and game development</p>
+          <p className='text-left text-xl font-2xl max-w-md'>I am a tech-savvy individual with a Bachelors degree in Software Development, seeking employment as a mobile game developer. I am passionate about consistently advancing my knowledge and skills. I have attended multiple seminars and boot camps on coding and game development</p>
         </div>
         <div className='flex gap-16 lg:mt-24 md:mt-12 '>
         <button className='font-bold text-xl px-16 py-4 bg-black text-white rounded-full'>Portfolio</button>
