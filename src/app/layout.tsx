@@ -1,5 +1,6 @@
 // These styles apply to every route in the application
 import Header from '@/components/layout/Header';
+// import Footer from '@/components/widgets/Footer';
 import './globals.css';
 
 export default function RootLayout({
@@ -12,7 +13,9 @@ export default function RootLayout({
       <body>
         {/* Navbar */}
         <Header/>
-        {children}</body>
+        {children}
+      
+        </body>
     </html>
   );
 }

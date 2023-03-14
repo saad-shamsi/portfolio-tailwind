@@ -12,8 +12,8 @@ const Header = () => {
     <div  className='  lg:py-6 py-1  px-8 flex gap-8 fixed bottom-10  
     font-bold text-2xl rounded-full cursor-pointer bg-glass filter drop-shadow-lg'>
    <Link href='/' > <IoIosHome /></Link>
-   <Link href='/myexperience' ><BsPersonWorkspace /></Link>
-   <div > <CgWebsite /></div>
+   <Link href='#myexperience' ><BsPersonWorkspace /></Link>
+   <div > <a href="#work"><CgWebsite /></a></div>
    <div > <FaInfoCircle/></div>
       <div> <RiContactsFill /></div>
     </div>
