@@ -8,13 +8,12 @@ import MyExperience from "@/components/widgets/MyExperience";
 export default function Page() {
   return (
     <>
-   
-     <Header/>
-     <Home/>
-       <MyExperience  />
-   <About/>
-    <Contact/>
-    <Footer/> 
+      <Header />
+      <Home />
+      <MyExperience />
+      <About />
+      <Contact />
+      <Footer />
     </>
-  )
-  }
+  );
+}
