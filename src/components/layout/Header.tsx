@@ -10,29 +10,31 @@ const Header = () => {
   return (
     <div className="w-full  flex justify-center ">
       <div
-        className="  lg:py-6 py-1  px-8 flex gap-8 fixed bottom-10  
-    font-bold text-2xl rounded-full cursor-pointer bg-glass filter drop-shadow-lg"
+        className=" py-6  px-8 flex gap-8 fixed bottom-10  
+    font-bold text-2xl rounded-full cursor-pointer bg-glass filter drop-shadow-lg z-10"
       >
-        <Link href="/">
+        <a href="#home">
           {" "}
           <IoIosHome />
-        </Link>
-        <Link href="#myexperience">
+        </a>
+        <a href="#experience">
           <BsPersonWorkspace />
-        </Link>
+        </a>
         <div>
           {" "}
-          <a href="#work">
+          <a href="#project">
             <CgWebsite />
           </a>
         </div>
         <div>
-          {" "}
-          <FcAbout />
+          <a href="#about">
+            <FcAbout />
+          </a>
         </div>
         <div>
-          {" "}
-          <RiContactsFill />
+          <a href="#contact">
+            <RiContactsFill />
+          </a>
         </div>
       </div>
     </div>

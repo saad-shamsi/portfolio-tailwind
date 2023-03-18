@@ -10,12 +10,13 @@ export default function Page() {
   return (
     <>
       <Header />
-      <Project />
-      {/* <Home />
+
+      <Home />
       <MyExperience />
+      <Project />
       <About />
-      <Contact />
-      <Footer /> */}
+      {/* <Contact /> */}
+      <Footer />
     </>
   );
 }

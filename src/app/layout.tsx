@@ -1,7 +1,7 @@
 // These styles apply to every route in the application
-import Header from '@/components/layout/Header';
+import Header from "@/components/layout/Header";
 // import Footer from '@/components/widgets/Footer';
-import './globals.css';
+import "./globals.css";
 
 export default function RootLayout({
   children,
@@ -10,12 +10,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className="bg-teal-400">
         {/* Navbar */}
-        <Header/>
+        <Header />
         {children}
-      
-        </body>
+      </body>
     </html>
   );
 }

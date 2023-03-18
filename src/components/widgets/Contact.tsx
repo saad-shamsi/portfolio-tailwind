@@ -8,10 +8,10 @@ import { BsLinkedin } from "react-icons/bs";
 import { FiInstagram } from "react-icons/fi";
 const Contact = () => {
   return (
-    <section id="contact" className="antialiased bg-gray-100 h-screen">
-      <div className="flexs w-full  justify-center items-center ">
+    <section id="contact" className="antialiased bg-gray-100 ">
+      <div className="flex   justify-center items-center ">
         <div
-          className=" flex flex-col md:flex-row md:space-x-6 md:space-y-0  gap-y-6 bg-cyan-700 w-full  p-8
+          className=" flex flex-col md:flex-row md:space-x-6 md:space-y-0  gap-y-6 bg-cyan-700   p-8
         sm:p-12 rounded-xl shadow-lg text-white "
         >
           <div className="flex flex-col space-y-8 justify-between">
@@ -25,9 +25,6 @@ const Contact = () => {
                 deserunt cum quis.
               </p>
             </div>
-
-
-
 
             <div className="flex flex-col space-y-6">
               <div className="inline-flex space-x-2 ">

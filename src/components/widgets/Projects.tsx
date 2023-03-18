@@ -1,16 +1,28 @@
 import Image from "next/image";
 import React from "react";
-import { TbBrandNextjs } from "react-icons/tb";
+import { TbBrandNextjs as Next } from "react-icons/tb";
 import { GoPlus } from "react-icons/go";
 import { SiTailwindcss } from "react-icons/si";
 import { BiLinkExternal } from "react-icons/bi";
-import { SiChakraui } from "react-icons/si";
+import { SiChakraui as Chakra } from "react-icons/si";
 import PricingUI from "@/components/assets/pricing.png";
 const Service = () => {
+  const portfolios = [
+    {
+      id: 1,
+      src: PricingUI,
+      title: "Pricing UI",
+      icons: [Next, Chakra],
+      githubLink: "pricing-ui-chakra",
+    },
+  ];
   return (
-    <section className="wrapper bg-gradient-to-b from-gray-800 to-black w-full text-white md:h-screen">
+    <section
+      id="project"
+      className="wrapper bg-gradient-to-b from-gray-800 to-black w-full text-white h-screen"
+    >
       {/* main div */}
-      <div className="py-20 max-w-screen-lg ">
+      <div className="py-20 max-w-screen-lg md:text-left text-center">
         {/* Heading */}
         <div className=" font-bold text-4xl border-b-4 border-slate-600   inline">
           Portfolio
@@ -21,19 +33,25 @@ const Service = () => {
         {/* boxes main style */}
         <div>
           {/* box inner style */}
-          <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-8 px-12 sm:px-0">
+          <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 h-screen gap-8 px-12 sm:px-0">
             {/* Image */}
-            <div className="flex flex-col">
-              <div className="py-2 flex gap-4 justify-center items-center bg-gradient-to-b from-gray-800 to-black rounded-md ">
-                <TbBrandNextjs className="text-4xl font-bold rounded-full cursor-pointer hover:scale-105 hover:bg-black " />
-                <GoPlus className="text-white font-medium text-2xl" />
-                <SiChakraui className="text-3xl bg-teal-400 duration-200 font-bold cursor-pointer hover:scale-110 rounded-full" />
+            <div className="flex flex-col hover:scale-105 cursor-pointer duration-300">
+              <div className="py-2  bg-gradient-to-b from-gray-800 to-black rounded-md ">
+                {/* <div className="flex items-center justify-center mb-2 "> */}
+
+                {/* </div> */}
+                <div className="flex gap-4 justify-center items-center">
+                  <h4 className="text-2xl font-medium ">Pricing UI </h4>
+                  <Next className="text-4xl font-bold rounded-full cursor-pointer hover:scale-105 hover:bg-black " />
+                  <GoPlus className="text-white font-medium text-2xl" />
+                  <Chakra className="text-3xl bg-teal-400 duration-200 font-bold cursor-pointer hover:scale-110 rounded-full" />
+                </div>
               </div>
               <div className=" shadow-md shadow-gray-500 rounded-full">
                 <Image
                   src={PricingUI}
                   alt="pricing ui"
-                  className="rounded-md duration-200 hover:scale-105"
+                  className="rounded-md"
                 />
               </div>
 
@@ -48,7 +66,7 @@ const Service = () => {
                 </a>
 
                 <a
-                  href="https://github.com/saad-shamsi/pricing-ui-chakra"
+                  href={`https://github.com/saad-shamsi/${portfolios[0].githubLink}`}
                   target={"_blank"}
                   className="bg-black border-2  px-3 py-1.5 rounded-md   duration-300"
                 >

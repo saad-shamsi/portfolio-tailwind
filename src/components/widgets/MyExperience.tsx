@@ -90,9 +90,12 @@ const MyExperience = () => {
   ];
 
   return (
-    <section id="work wrapper">
-      <div className="bg-gradient-to-b from-gray-800 to-black w-full  pt-20 ">
-        <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full  h-full text-white ">
+    <section
+      id="experience"
+      className=" wrapper bg-gradient-to-b from-gray-800 to-black "
+    >
+      <div className="  w-full md:text-left  text-center pt-20 ">
+        <div className="  p-4  flex flex-col justify-center w-full  h-full text-white ">
           <div>
             <h2 className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline ">
               Experience
@@ -106,7 +109,10 @@ const MyExperience = () => {
               return (
                 <div
                   key={id}
-                  className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg z-10 w-80 ${style}`}
+                  className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg z-10 
+                
+                
+                  ${style}`}
                 >
                   <Image
                     src={src}

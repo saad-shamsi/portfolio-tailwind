@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 @layer utilities {
-    .wrapper {
-     max-width: 1536px;
-     margin-left: auto;
-     margin-right: auto;
-     padding-left: 2.5rem;
-     padding-right: 2.5rem;
-    }
+  .wrapper {
+    max-width: 1536px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
+}
