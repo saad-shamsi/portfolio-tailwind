@@ -11,7 +11,7 @@ const About = () => {
       id="about"
       className="max-w-screen-2xl mx-auto grid min-[936px]:grid-cols-[40%,60%] max-[936px]:grid-cols  "
     >
-      <div className="bg-gradient-to-b  text-white from-black to-teal-600  p-auto flex flex-col justify-center items-center gap-10 py-10">
+      <div className="bg-gradient-to-b  text-white bg-blue-900 to-rose-700-600  p-auto flex flex-col justify-center items-center gap-10 py-10">
         <Image src={Photo} alt="" />
         <div className="text-center flex  flex-col gap-3">
           <h2 className="font-bold text-3xl">Saad Shamsi (he/him)</h2>
@@ -27,7 +27,7 @@ const About = () => {
           <BsLinkedin />
         </div>
       </div>
-      <div className=" bg-teal-500 pb-24 flex flex-col items-center justify-center pt-8">
+      <div className=" bg-blue-900 to-rose-700-600 pb-24 flex flex-col items-center justify-center pt-8">
         <div className="flex gap-5 flex-col  flex-center items-center">
           <h1 className="font-bold text-6xl  ">About Me</h1>
           <p className="text-left text-xl font-2xl max-w-md">

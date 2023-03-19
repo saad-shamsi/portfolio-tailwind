@@ -104,7 +104,7 @@ const MyExperience = () => {
               Threse are the technologies I have worked with
             </p>
           </div>
-          <div className="w-full grid md:justify-center sm:grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0 ">
+          <div className="w-full grid md:justify-center sm:grid-cols-2 md:grid-cols-3  lg:grid-cols-4 gap-8 text-center py-8 px-12 sm:px-0 ">
             {techStack.map(({ id, src, title, style }) => {
               return (
                 <div
@@ -117,7 +117,7 @@ const MyExperience = () => {
                   <Image
                     src={src}
                     alt="programming languages"
-                    className="w-24 mx-auto"
+                    className="w-24 mx-auto "
                   />
                   <p className="mt-4">{title}</p>
                 </div>

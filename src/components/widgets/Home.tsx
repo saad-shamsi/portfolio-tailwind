@@ -35,12 +35,12 @@ const Home = () => {
                 target="blank"
               >
                 {" "}
-                <FaFacebookF className="text-3xl" />
+                <FaFacebookF className="sm:text-3xl text-2xl" />
               </a>
             </div>
             <a href="https://www.instagram.com/" target="blank">
               <div className="p-2 ring-2 rounded-full hover:bg-gradient-to-bl from-[#5851D8] via-[#E1306C] to-[#C13584] duration-300">
-                <AiOutlineInstagram className=" text-4xl" />
+                <AiOutlineInstagram className=" sm:text-4xl text-3xl " />
               </div>
             </a>
             <a
@@ -48,12 +48,12 @@ const Home = () => {
               target="blank"
             >
               <div className="p-3 ring-2 rounded-full hover:bg-[#0A66C2] duration-300">
-                <FaLinkedinIn className="text-3xl" />
+                <FaLinkedinIn className="sm:text-3xl text-2xl" />
               </div>
             </a>
             <a href="https://twitter.com/SaadShamsi09" target="blank">
               <div className="p-3 ring-2 rounded-full hover:bg-[#00acfe] ">
-                <BsTwitter className="text-3xl" />
+                <BsTwitter className="sm:text-3xl text-2xl" />
               </div>
             </a>
           </div>

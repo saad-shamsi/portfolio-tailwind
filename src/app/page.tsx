@@ -15,7 +15,7 @@ export default function Page() {
       <MyExperience />
       <Project />
       <About />
-      {/* <Contact /> */}
+      <Contact />
       <Footer />
     </>
   );
