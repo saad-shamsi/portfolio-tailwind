@@ -48,7 +48,7 @@ const Service = () => {
     {
       id: 3,
       src: panverse,
-      title: "Pricing UI",
+      title: "Panaverse DAO",
       icons: [Next, tailwind, typescript],
       githubLink: "pricing-ui-chakra",
       demoLink: "",
@@ -56,7 +56,7 @@ const Service = () => {
     {
       id: 4,
       src: textUtils,
-      title: "Pricing UI",
+      title: "Text-Utils",
       icons: [react, Chakra],
       githubLink: "pricing-ui-chakra",
       demoLink: "",
@@ -64,7 +64,7 @@ const Service = () => {
     {
       id: 5,
       src: todo,
-      title: "Pricing UI",
+      title: "Todo App",
       icons: [Next, Chakra],
       githubLink: "pricing-ui-chakra",
       demoLink: "",
@@ -72,7 +72,7 @@ const Service = () => {
     {
       id: 6,
       src: gallery,
-      title: "Pricing UI",
+      title: "Animated Gallery",
       icons: [css],
       githubLink: "pricing-ui-chakra",
       demoLink: "",
@@ -80,7 +80,7 @@ const Service = () => {
     {
       id: 7,
       src: blog,
-      title: "Pricing UI",
+      title: "Next.js Blog",
       icons: [Next, typescript],
       githubLink: "pricing-ui-chakra",
       demoLink: "",
@@ -88,7 +88,7 @@ const Service = () => {
     {
       id: 8,
       src: panverseChakra,
-      title: "Pricing UI",
+      title: "Panaverse",
       icons: [Next, Chakra],
       githubLink: "pricing-ui-chakra",
       demoLink: "",

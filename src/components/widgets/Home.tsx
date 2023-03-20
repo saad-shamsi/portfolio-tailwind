@@ -5,8 +5,12 @@ import { FaFacebookF } from "react-icons/fa";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import { BsTwitter } from "react-icons/bs";
+import { BsFillArrowRightCircleFill } from "react-icons/bs";
+import Button from "../shared/Button";
+
 const Home = () => {
   const me = "it's";
+  const buttonText = "Let's Talk";
   return (
     <section
       id="home"
@@ -27,6 +31,9 @@ const Home = () => {
           <p className="mt-3 text-lg text-center font-medium  max-w-lg text-teal-400">
             *Bringing ideas to life with code and creativity.
           </p>
+          <div className="my-6 flex justify-around">
+            <Button text={buttonText} />
+          </div>
           {/* icons */}
           <div className="mt-8 text-white flex font-bold gap-8 cursor-pointer mx-5 justify-center">
             <div className="p-3 ring-2 rounded-full hover:bg-blue-600  duration-300">
@@ -64,7 +71,7 @@ const Home = () => {
           <Image
             src={Profile}
             alt="Profile picture"
-            className=" md:my-28  xl:mr-16 md:w-80 w-60  rounded-lg border-black  ring-4 ring-red-500 shadow-2xl 
+            className="  md:my-28  xl:mr-16 md:w-80 w-60  rounded-lg border-black  ring-4 ring-red-500 shadow-2xl transition hover:-translate-y-3 cursor-pointer duration-1000
 "
           ></Image>
         </div>
