@@ -106,12 +106,12 @@ const Service = () => {
   return (
     <section
       id="project"
-      className="pt-20 wrapper mx-auto min-w-fit  md:px-28 px-5  bg-gradient-to-b from-gray-800 to-black  text-white"
+      className="pt-20 wrapper mx-auto min-w-fit  md:px-28 px-5 bg-gradient-to-b from-gray-800 to-black  text-white"
     >
       {/* main div */}
       {/* <div className="py-20 max-w-screen-lg md:text-left text-center"> */}
       {/* Heading */}
-      <div className="text-center md:text-start min-w-fit">
+      <div className="text-center md:text-start  min-w-fit">
         <div className=" font-bold  text-4xl border-b-4 border-slate-600   inline">
           Portfolio
         </div>

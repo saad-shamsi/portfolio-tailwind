@@ -95,7 +95,7 @@ const MyExperience = () => {
       className="wrapper min-w-fit mx-auto md:px-28 px-5   bg-gradient-to-b from-gray-800 to-black "
     >
       <div className="  w-full md:text-left  text-center pt-20 ">
-        <div className="  p-4  flex flex-col justify-center w-full   text-white ">
+        <div className="  flex flex-col justify-center w-full   text-white ">
           <div>
             <h2 className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline ">
               Experience
