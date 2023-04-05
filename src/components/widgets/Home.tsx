@@ -14,7 +14,7 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="wrapper min-w-fit mx-auto md:pl-28 px-5 bg-gradient-to-b from-gray-800 to-black  "
+      className="wrapper min-w-fit mx-auto md:pl-12 lg:pl-28 px-5 bg-gradient-to-b from-gray-800 to-black  "
     >
       <div className="flex lg:pt-none pt-8 md:flex-row  flex-col items-center flex-1 justify-between  lg:gap-2   gap-y-10">
         {/* Left Content */}

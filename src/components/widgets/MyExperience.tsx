@@ -90,43 +90,45 @@ const MyExperience = () => {
   ];
 
   return (
-    <section
-      id="experience"
-      className="wrapper min-w-fit mx-auto md:px-28 px-5   bg-gradient-to-b from-gray-800 to-black "
-    >
-      <div className="  w-full md:text-left  text-center pt-20 ">
-        <div className="  flex flex-col justify-center w-full   text-white ">
-          <div>
-            <h2 className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline ">
-              Experience
-            </h2>
-            <p className="py-6 ">
-              Threse are the technologies I have worked with
-            </p>
-          </div>
-          <div className="w-full grid md:justify-center sm:grid-cols-2 md:grid-cols-3  lg:grid-cols-4 gap-8 text-center  ">
-            {techStack.map(({ id, src, title, style }) => {
-              return (
-                <div
-                  key={id}
-                  className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg z-10 
+    <div className=" bg-gradient-to-b from-gray-800 to-black">
+      <section
+        id="experience"
+        className="wrapper min-w-fit mx-auto md:px-28 px-5    "
+      >
+        <div className="  w-full md:text-left  text-center pt-20 ">
+          <div className="  flex flex-col justify-center w-full   text-white ">
+            <div>
+              <h2 className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline ">
+                Experience
+              </h2>
+              <p className="py-6 ">
+                Threse are the technologies I have worked with
+              </p>
+            </div>
+            <div className="w-full grid md:justify-center sm:grid-cols-2 md:grid-cols-3  lg:grid-cols-4 gap-8 text-center  ">
+              {techStack.map(({ id, src, title, style }) => {
+                return (
+                  <div
+                    key={id}
+                    className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg z-10 
                 
                 
                   ${style}`}
-                >
-                  <Image
-                    src={src}
-                    alt="programming languages"
-                    className="w-24 mx-auto "
-                  />
-                  <p className="mt-4">{title}</p>
-                </div>
-              );
-            })}
+                  >
+                    <Image
+                      src={src}
+                      alt="programming languages"
+                      className="w-24 mx-auto "
+                    />
+                    <p className="mt-4">{title}</p>
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 };
 
