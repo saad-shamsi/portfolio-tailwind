@@ -92,10 +92,10 @@ const MyExperience = () => {
   return (
     <section
       id="experience"
-      className=" wrapper bg-gradient-to-b from-gray-800 to-black "
+      className="wrapper min-w-fit mx-auto md:px-28 px-5   bg-gradient-to-b from-gray-800 to-black "
     >
       <div className="  w-full md:text-left  text-center pt-20 ">
-        <div className="  p-4  flex flex-col justify-center w-full  h-full text-white ">
+        <div className="  p-4  flex flex-col justify-center w-full   text-white ">
           <div>
             <h2 className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline ">
               Experience
@@ -104,7 +104,7 @@ const MyExperience = () => {
               Threse are the technologies I have worked with
             </p>
           </div>
-          <div className="w-full grid md:justify-center sm:grid-cols-2 md:grid-cols-3  lg:grid-cols-4 gap-8 text-center py-8 px-12 sm:px-0 ">
+          <div className="w-full grid md:justify-center sm:grid-cols-2 md:grid-cols-3  lg:grid-cols-4 gap-8 text-center  ">
             {techStack.map(({ id, src, title, style }) => {
               return (
                 <div

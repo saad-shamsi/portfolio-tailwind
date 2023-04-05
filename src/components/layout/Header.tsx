@@ -3,7 +3,7 @@ import { IoIosHome } from "react-icons/io";
 import { BsPersonWorkspace } from "react-icons/bs";
 import { CgWebsite } from "react-icons/cg";
 import { RiContactsFill } from "react-icons/ri";
-import { FcAbout } from "react-icons/fc";
+import { RiInformationLine } from "react-icons/ri";
 import Link from "next/link";
 import { useState } from "react";
 const Header = () => {
@@ -11,7 +11,7 @@ const Header = () => {
     <div className="w-full  flex justify-center ">
       <div
         className=" py-6  px-8 flex gap-8 fixed bottom-10  
-    font-bold text-2xl rounded-full cursor-pointer bg-glass filter drop-shadow-lg z-10"
+    font-bold text-2xl rounded-full cursor-pointer bg-[#001845] text-[#2f6690] filter drop-shadow-lg z-10"
       >
         <a href="#home">
           {" "}
@@ -28,7 +28,7 @@ const Header = () => {
         </div>
         <div>
           <a href="#about">
-            <FcAbout />
+            <RiInformationLine />
           </a>
         </div>
         <div>

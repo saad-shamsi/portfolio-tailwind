@@ -18,6 +18,7 @@ import gallery from "@/components/assets/gallery.png";
 import panverseChakra from "@/components/assets/panaverse-cakra.png";
 import blog from "@/components/assets/blog.png";
 import todo from "@/components/assets/todo.png";
+import signup from "@/components/assets/signup.png";
 
 interface Portfolio {
   id: number;
@@ -34,85 +35,95 @@ const Service = () => {
       src: PricingUI,
       title: "Pricing UI",
       icons: [Next, Chakra],
-      githubLink: "pricing-ui-chakra",
-      demoLink: "",
+      githubLink: "https://github.com/saad-shamsi/pricing-ui-chakra",
+      demoLink: "https://pricing-ui-chakra-rho.vercel.app/",
     },
     {
       id: 2,
       src: usability,
       title: "Landing Page",
       icons: [html, css],
-      githubLink: "pricing-ui-chakra",
-      demoLink: "",
+      githubLink: "https://github.com/saad-shamsi/landing-page",
+      demoLink: "https://usability-hub-push.surge.sh/",
     },
     {
       id: 3,
       src: panverse,
       title: "Panaverse DAO",
       icons: [Next, tailwind, typescript],
-      githubLink: "pricing-ui-chakra",
-      demoLink: "",
+      githubLink: "https://github.com/saad-shamsi/panaverse-web-tailwind",
+      demoLink: "https://panaverse-dao-saad.vercel.app",
     },
     {
       id: 4,
       src: textUtils,
       title: "Text-Utils",
       icons: [react, Chakra],
-      githubLink: "pricing-ui-chakra",
-      demoLink: "",
+      githubLink: "https://github.com/saad-shamsi/Text-utils-React",
+      demoLink: "https://panaverse-dao-saad.vercel.app",
     },
     {
       id: 5,
       src: todo,
       title: "Todo App",
       icons: [Next, Chakra],
-      githubLink: "pricing-ui-chakra",
-      demoLink: "",
+      githubLink: "https://github.com/saad-shamsi/todo-app-next.js",
+      demoLink: "https://todoapp-nextjs-eight.vercel.app/",
     },
     {
       id: 6,
       src: gallery,
       title: "Animated Gallery",
       icons: [css],
-      githubLink: "pricing-ui-chakra",
-      demoLink: "",
+      githubLink: "https://github.com/saad-shamsi/animated-gallery",
+      demoLink: "https://animated-gallery.surge.sh/",
     },
     {
       id: 7,
       src: blog,
       title: "Next.js Blog",
       icons: [Next, typescript],
-      githubLink: "pricing-ui-chakra",
-      demoLink: "",
+      githubLink: "https://github.com/saad-shamsi/nextjs-blog",
+      demoLink: "https://nextjs-blog-five-blond.vercel.app/",
     },
     {
       id: 8,
       src: panverseChakra,
       title: "Panaverse",
       icons: [Next, Chakra],
-      githubLink: "pricing-ui-chakra",
-      demoLink: "",
+      githubLink: "https://github.com/saad-shamsi/panaverse-web-",
+      demoLink: "https://panaverse-web-alpha.vercel.app/",
+    },
+    {
+      id: 9,
+      src: signup,
+      title: "Signup window",
+      icons: [Next, Chakra],
+      githubLink: "https://github.com/saad-shamsi/Signup-Window",
+      demoLink: "signup-window.surge.sh",
     },
   ];
   return (
     <section
       id="project"
-      className="wrapper bg-gradient-to-b from-gray-800 to-black w-full text-white"
+      className="pt-20 wrapper mx-auto min-w-fit  md:px-28 px-5  bg-gradient-to-b from-gray-800 to-black  text-white"
     >
       {/* main div */}
       {/* <div className="py-20 max-w-screen-lg md:text-left text-center"> */}
       {/* Heading */}
-      <div className=" font-bold text-4xl border-b-4 border-slate-600   inline">
-        Portfolio
-      </div>
-      <div className="my-4 font-medium text-base">
-        Here are my some testimonials:
+      <div className="text-center md:text-start min-w-fit">
+        <div className=" font-bold  text-4xl border-b-4 border-slate-600   inline">
+          Portfolio
+        </div>
+        <div className="my-4 font-medium text-base">
+          Here are my some testimonials:
+        </div>
       </div>
 
       {/* boxes main style */}
       <div>
         {/* box inner style */}
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 pb-8 gap-8 px-12 sm:px-0">
+        <div className="grid lg:grid-cols-3  sm:grid-cols-2 pb-8 md:gap-none  gap-8 ">
           {/* Image */}
           {portfolios.map(({ id, title, src, icons, githubLink, demoLink }) => {
             return (
@@ -126,9 +137,6 @@ const Service = () => {
                   {/* </div> */}
                   <div className="flex gap-6 justify-center items-center">
                     <h4 className="text-2xl font-medium ">{title} </h4>
-                    <Next className="text-4xl font-bold rounded-full cursor-pointer hover:scale-105 hover:bg-black " />
-                    <GoPlus className="text-white font-medium text-2xl" />
-                    <Chakra className="text-3xl bg-teal-400 duration-200 font-bold cursor-pointer hover:scale-110 rounded-full" />
                   </div>
                 </div>
                 <div className=" shadow-md shadow-gray-500 rounded-full">
@@ -146,9 +154,9 @@ const Service = () => {
                   </a>
 
                   <a
-                    href={`${githubLink}${portfolios[0].githubLink}`}
+                    href={githubLink}
                     target={"_blank"}
-                    className="bg-black border-2  px-3 py-1.5 rounded-md   duration-300"
+                    className="bg-black border-2  md:px-3 px-2  md:py-1.5 py-1 rounded-md   duration-300"
                   >
                     <BiLinkExternal className=" cursor-pointer inline-block " />
                     Github

@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Profile from "@/components/assets/profile.webp";
+import Profile from "@/components/assets/Profile.webp";
 import { FaFacebookF } from "react-icons/fa";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
@@ -14,9 +14,9 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="wrapper bg-gradient-to-b from-gray-800 to-black  "
+      className="wrapper min-w-fit mx-auto md:pl-28 px-5 bg-gradient-to-b from-gray-800 to-black  "
     >
-      <div className="flex lg:pt-none pt-8 md:flex-row  flex-col items-center flex-1 justify-between lg:mx-24 md:mx-10 lg:gap-2  gap-x-8 gap-y-10">
+      <div className="flex lg:pt-none pt-8 md:flex-row  flex-col items-center flex-1 justify-between  lg:gap-2   gap-y-10">
         {/* Left Content */}
         <div className="text-center min-[768px]:text-left">
           {/* <div className=" relative top-0 right-0 w-44 h-44  bg-[#5444e0] blur-3xl rounded-full z-0 inline-block"></div>  */}
@@ -28,14 +28,16 @@ const Home = () => {
           <h4 className="mt-2 text-3xl lg:text-2xl font-semibold text-cyan-400   ">
             Frontend Developer | Web Designer{" "}
           </h4>
-          <p className="mt-3 text-lg text-center font-medium  max-w-lg text-teal-400">
+          <p className="mt-3 text-lg text-center font-medium  max-w-lg text-teal-300 ">
             *Bringing ideas to life with code and creativity.
           </p>
           <div className="my-6 flex justify-around">
-            <Button text={buttonText} />
+            <a href="#contact">
+              <Button text={buttonText} />
+            </a>
           </div>
           {/* icons */}
-          <div className="mt-8 text-white flex font-bold gap-8 cursor-pointer mx-5 justify-center">
+          <div className="mt-12 text-white flex font-bold gap-8 cursor-pointer  justify-center">
             <div className="p-3 ring-2 rounded-full hover:bg-blue-600  duration-300">
               <a
                 href="https://www.facebook.com/profile.php?id=100085458046949"
@@ -67,11 +69,11 @@ const Home = () => {
         </div>
         {/* Right COntent/Image */}
 
-        <div className="pb-4">
+        <div className="pb-4  md:mr-10 mr-none">
           <Image
             src={Profile}
             alt="Profile picture"
-            className="  md:my-28  xl:mr-16 md:w-80 w-60  rounded-lg border-black  ring-4 ring-red-500 shadow-2xl transition hover:-translate-y-3 cursor-pointer duration-1000
+            className="  md:my-28   xl:mr-28 md:w-80 w-60  rounded-lg border-black  ring-4 ring-red-500 shadow-xl transition hover:-translate-y-3 cursor-pointer duration-1000  shadow-white
 "
           ></Image>
         </div>
