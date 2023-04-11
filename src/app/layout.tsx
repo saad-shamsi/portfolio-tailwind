@@ -1,9 +1,9 @@
 // These styles apply to every route in the application
-import { Playfair_Display } from "next/font/google";
+import { Poppins } from "next/font/google";
 import Header from "@/components/layout/Header";
 // import Footer from '@/components/widgets/Footer';
 import "./globals.css";
-const Playfair = Playfair_Display({
+const poppins = Poppins({
   weight: ["400", "700"],
   subsets: ["latin"],
 });
@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={Playfair.className}>
+      <body className={poppins.className}>
         {/* Navbar */}
         <Header />
         {children}
