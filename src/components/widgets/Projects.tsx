@@ -33,6 +33,7 @@ const Service = () => {
     {
       id: 1,
       src: PricingUI,
+
       title: "Pricing UI",
       icons: [Next, Chakra],
       githubLink: "https://github.com/saad-shamsi/pricing-ui-chakra",

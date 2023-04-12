@@ -90,11 +90,8 @@ const MyExperience = () => {
   ];
 
   return (
-    <div className=" bg-gradient-to-b from-gray-800 to-black">
-      <section
-        id="experience"
-        className="wrapper min-w-fit mx-auto md:px-28 px-5    "
-      >
+    <div className=" wrapper min-w-fit mx-auto md:px-28 px-5 bg-gradient-to-b from-gray-800 to-black">
+      <section id="experience" className="    ">
         <div className="  w-full md:text-left  text-center pt-20 ">
           <div className="  flex flex-col justify-center w-full   text-white ">
             <div>
